@@ -2,16 +2,16 @@ package kata2;
 
 import java.util.HashMap;
 
-public class Histogram<T> {
+public class Histogram {
 
-    private final T[] elVector;
+    private final int[] elVector;
 
-    public Histogram(T[] elVector) {
+    public Histogram(int[] elVector) {
         this.elVector = elVector;
     }
     
-    public HashMap<T, Integer> getHisto(){
-        HashMap <T, Integer> histograma = new HashMap();
+    public HashMap<Integer, Integer> getHisto(){
+        HashMap <Integer, Integer> histograma = new HashMap();
 
         for (int i = 0; i < elVector.length; i++) {
             if (!histograma.containsKey(elVector[i])){
